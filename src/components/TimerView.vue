@@ -359,7 +359,7 @@ window.addEventListener('beforeunload', () => {
 <style scoped>
 .timer-container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 50px auto;
   padding: 0 1rem;
 }
 
@@ -383,7 +383,7 @@ window.addEventListener('beforeunload', () => {
 }
 
 .timer-header h2 {
-  color: #333;
+  color: #ffffff;
   margin: 0;
   flex: 1;
 }
@@ -499,6 +499,7 @@ window.addEventListener('beforeunload', () => {
   align-items: center;
   gap: 1rem;
   font-weight: 600;
+  color:#333
 }
 
 .timer-settings input {

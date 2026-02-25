@@ -106,7 +106,7 @@ onMounted(() => {
 <style scoped>
 .habits-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px auto;
   padding: 0 1rem;
 }
 
@@ -195,7 +195,7 @@ onMounted(() => {
 }
 
 .habit-card {
-  background: white;
+  background: #212121;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -220,7 +220,7 @@ onMounted(() => {
 }
 
 .habit-header h3 {
-  color: #333;
+  color: #f4f4f4;
   margin: 0;
   flex: 1;
 }
@@ -228,7 +228,7 @@ onMounted(() => {
 .habit-category {
   display: inline-block;
   padding: 0.25rem 0.75rem;
-  background: #f0f0ff;
+  background: #121212;
   color: #667eea;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -256,12 +256,12 @@ onMounted(() => {
 }
 
 .detail-label {
-  color: #999;
+  color: #ffffff;
   font-weight: 600;
 }
 
 .detail-value {
-  color: #333;
+  color: #ffffff;
 }
 
 .detail-value.active {

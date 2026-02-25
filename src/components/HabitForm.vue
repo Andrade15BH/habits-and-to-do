@@ -246,19 +246,19 @@ onMounted(async () => {
 <style scoped>
 .habit-form-container {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 50px auto;
   padding: 0 1rem;
 }
 
 .form-card {
-  background: white;
+  background: #212121;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  color: #333;
+  color: #ffffff;
   margin-top: 0;
   margin-bottom: 1.5rem;
 }

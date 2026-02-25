@@ -2,7 +2,7 @@
   <div class="checkin-container">
     <div class="checkin-header">
       <button @click="goBack" class="btn-back">← Atrás</button>
-      <h2 v-if="habit">{{ habit.name }} - Check-ins</h2>
+      <h2 v-if="habit" style="color:black">{{ habit.name }} - Check-ins</h2>
       <div style="width: 60px"></div>
     </div>
 

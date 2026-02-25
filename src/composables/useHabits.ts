@@ -30,6 +30,7 @@ export function useHabits() {
     state.value.error = null;
     try {
       const fetchedHabits = await habitService.getUserHabits(currentUser.value.uid);
+      console.log('Fetched habits:', fetchedHabits);
       state.value.habits = fetchedHabits;
     } catch (err: any) {
       state.value.error = err.message || 'Error al cargar hábitos';

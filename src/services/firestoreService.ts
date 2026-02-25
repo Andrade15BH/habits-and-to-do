@@ -43,16 +43,19 @@ export const habitService = {
   async getUserHabits(userId: string): Promise<Habit[]> {
     const q = query(
       collection(db, 'habits'),
-      where('userId', '==', userId),
-      orderBy('createdAt', 'desc')
+      where('userId', '==', userId)
     );
+
     const snapshot = await getDocs(q);
-    return snapshot.docs.map((doc) => ({
+
+    return snapshot.docs.map((doc) => ({ 
       id: doc.id,
-      ...doc.data(),
+       ...doc.data(),
       createdAt: doc.data().createdAt?.toDate() || new Date(),
       updatedAt: doc.data().updatedAt?.toDate() || new Date(),
-    })) as Habit[];
+      })) as Habit[];
+
+
   },
 
   // Obtener un hábito específico
@@ -167,8 +170,7 @@ export const checkInService = {
   async getHabitCheckIns(habitId: string): Promise<HabitCheckIn[]> {
     const q = query(
       collection(db, 'checkIns'),
-      where('habitId', '==', habitId),
-      orderBy('date', 'desc')
+      where('habitId', '==', habitId)
     );
     const snapshot = await getDocs(q);
     return snapshot.docs.map((doc) => ({

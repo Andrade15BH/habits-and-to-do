@@ -38,13 +38,13 @@ const handleLogout = async () => {
 <style scoped>
 .app-container {
   min-height: 100vh;
-  background: #f5f7fa;
+  background: #2f333a;
   display: flex;
   flex-direction: column;
 }
 
 .app-header {
-  background: white;
+  background: #212121;;
   border-bottom: 1px solid #e0e0e0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
@@ -64,7 +64,7 @@ const handleLogout = async () => {
 
 .app-title {
   font-size: 1.5rem;
-  color: #333;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -75,7 +75,7 @@ const handleLogout = async () => {
 }
 
 .user-email {
-  color: #666;
+  color: #fffcfc;
   font-size: 0.9rem;
 }
 
@@ -96,6 +96,5 @@ const handleLogout = async () => {
 
 .app-main {
   flex: 1;
-  padding: 2rem 1rem;
 }
 </style>

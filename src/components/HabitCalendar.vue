@@ -221,7 +221,7 @@ onMounted(async () => {
 <style scoped>
 .calendar-container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 50px auto;
   padding: 0 1rem;
 }
 
@@ -254,7 +254,7 @@ onMounted(async () => {
 }
 
 .filters {
-  background: white;
+  background: #212121;
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 2rem;
@@ -312,7 +312,7 @@ onMounted(async () => {
 .calendar-weekdays {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  background: #f5f5f5;
+  background: #212121;
   border-bottom: 2px solid #ddd;
 }
 
@@ -320,7 +320,7 @@ onMounted(async () => {
   padding: 1rem;
   text-align: center;
   font-weight: 600;
-  color: #666;
+  color: #ffffff;
 }
 
 .calendar-grid {
@@ -335,7 +335,7 @@ onMounted(async () => {
   border: 1px solid #eee;
   padding: 0.5rem;
   position: relative;
-  background: white;
+  background: #212121;
   min-height: 100px;
   overflow-y: auto;
 }
@@ -346,7 +346,7 @@ onMounted(async () => {
 
 .calendar-cell.today {
   background: #fffccc;
-  box-shadow: inset 0 0 0 2px #ffd700;
+  box-shadow: inset 0 0 0 2px #726b43;
 }
 
 .cell-content {
@@ -357,7 +357,7 @@ onMounted(async () => {
 
 .cell-date {
   font-weight: 600;
-  color: #333;
+  color: #ffffff;
   font-size: 0.9rem;
 }
 
@@ -365,8 +365,8 @@ onMounted(async () => {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   color: white;
   font-weight: 600;
@@ -404,7 +404,7 @@ onMounted(async () => {
   gap: 2rem;
   margin-top: 2rem;
   padding: 1rem;
-  background: white;
+  background: #212121;;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
